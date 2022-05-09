@@ -42,4 +42,20 @@ public class LinkedList
 	  }
 			System.out.println();
 		}
+ public void add(int data) {
+	 Node newNode = new Node(data);
+	 newNode.next = head;
+	 head = newNode;
+ }
+
+public void printf()
+{
+	Node temp = head;
+	while(temp!=null) 
+	{
+		System.out.print(temp.data+"->");
+		temp = temp.next;
+	}
+	System.out.println();
+}
 }
