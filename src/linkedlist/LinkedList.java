@@ -42,7 +42,7 @@ public class LinkedList
 	  }
 			System.out.println();
 		}
- public void add(int data) {
+ public void Append(int data) {
 	 Node newNode = new Node(data);
 	 newNode.next = head;
 	 head = newNode;

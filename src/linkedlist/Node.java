@@ -6,9 +6,9 @@ public class Node {
 	{
        System.out.println("Welcome to Data Structure");
 	   LinkedList linkedList = new LinkedList();
-	   linkedList.add(70);
-	   linkedList.add(30);
-	   linkedList.add(56);
+	   linkedList.Append(70);
+	   linkedList.Append(30);
+	   linkedList.Append(56);
 	   linkedList.print();
 
 	}
