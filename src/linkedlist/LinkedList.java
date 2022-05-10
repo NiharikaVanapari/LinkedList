@@ -2,60 +2,60 @@ package linkedlist;
 
 public class LinkedList
 {
-	Node head;
-	
-   class Node
-   {
-		 int data;
-		 Node next;
+  Node head;
+  class Node
+  {
+	int data;
+    Node next;
 		 
-	 public Node(int data) 
-	 {
-		this.data = data;
-		this.next = null;
-	 }
-   }
- public void insert (int data)
- {
+  public Node(int data) 
+  {
+	this.data = data;
+	this.next = null;
+  }
+}
+public  Node insert (int data)
+{
+			
 	Node newNode = new Node(data);
 	if (head == null)
 	{
 		head = newNode;
-	 }
+	}
 	else 
 	{
 		Node temp = head;
 		while(temp.next != null)
 		{
-		  temp = temp.next;
-		}
-		  temp.next = newNode;
-	}
- }
- public void print() 
-  {
-	 Node temp = head;
-	 while(temp!=null) 
-	 {
-		System.out.print(temp.data+"->");
-		temp = temp.next;
-	  }
-			System.out.println();
-		}
- public void Append(int data) {
-	 Node newNode = new Node(data);
-	 newNode.next = head;
-	 head = newNode;
- }
+			temp = temp.next;
+		 }
+			temp.next = newNode;
+	 }
+			return newNode;
+}
 
-public void printf()
+public void print() 
 {
 	Node temp = head;
 	while(temp!=null) 
 	{
-		System.out.print(temp.data+"->");
+		System.out.print(temp.data + "->");
 		temp = temp.next;
 	}
-	System.out.println();
+		System.out.println();
+	}
+public void insertAfter(Node prevNode, int value)
+{
+   if (prevNode == null)
+	{
+		System.out.println("Previous Node should not be NULL");
+		return;
+	}
+			
+	 Node newNode = new Node(value);
+	 newNode.next = prevNode.next;
+	 prevNode.next = newNode;
+
+			
 }
 }
