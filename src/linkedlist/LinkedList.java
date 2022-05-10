@@ -97,4 +97,24 @@ public class LinkedList
 			         current = current.next; 
 			    }  
 			}
+		 public void deleteElement(int check)
+			{
+				int count=0;
+		        Node current = head;    
+			    while (current != null) 
+			    { 
+			         if (current.next.data == check) 
+			         {
+			              current.next=null;
+			         }
+			         count++;
+			         current = current.next; 
+			    }  
+			  
+			}
+		 public void printsize()
+		 {
+			 int count = 3;
+			System.out.println("size of list: " +count );
+		 }
 }
