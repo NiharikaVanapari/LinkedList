@@ -43,7 +43,7 @@ public void print()
 		temp = temp.next;
 	}
 		System.out.println();
-	}
+}
 public void insertAfter(Node prevNode, int value)
 {
    if (prevNode == null)
@@ -56,6 +56,16 @@ public void insertAfter(Node prevNode, int value)
 	 newNode.next = prevNode.next;
 	 prevNode.next = newNode;
 
-			
 }
+public int pop()
+{
+	int popData = 0;
+	if (head == null) 
+	{
+	System.out.println("Stack Over Flow");
+	}
+	popData = head.data;
+	head = head.next;
+	return popData;
+	}
 }
