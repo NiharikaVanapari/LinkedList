@@ -11,9 +11,10 @@ public class Node
 	   linkedList.insert(30);
 	   linkedList.insert(70);
 	   linkedList.print();
-	   
-	   int popLast= linkedList.popLast();
-		 System.out.println(popLast);
+	   linkedList.findElement(30);
+	   System.out.println(linkedList.i);
+	   int popLast = linkedList.popLast();
+	   System.out.println(popLast);
 	   
 	   linkedList.print();
 

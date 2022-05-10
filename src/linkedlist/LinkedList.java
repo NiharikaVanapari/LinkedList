@@ -4,6 +4,7 @@ public class LinkedList
 {
 	Node head;
 	Node tail;
+	int i = 30;
 	
 	 class Node
 	  {
@@ -84,4 +85,16 @@ public class LinkedList
 		        }
 				return 0;
 		   }
+		 public void findElement(int check)
+			{
+			    Node current = head;    
+			    while (current != null) 
+			    { 
+			         if (current.data == check) 
+			         {
+			              System.out.println(check+" is present");
+			         }
+			         current = current.next; 
+			    }  
+			}
 }
